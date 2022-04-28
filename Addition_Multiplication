@@ -9,9 +9,13 @@ printf(”Enter second number\n”);
 scanf(“%d”,&b);
 printf(“Enter 1 for addition or 2 for multiplication\n”);
 scanf(“%d”,&choice);
-result = (choice==1)?a+b:(choice==2)?a*b:printf(“Invalid”);
-if(choice==1||choice==2)
-printf(“The result is %d\n\n”,result);
+if(choice==1)
+result=a+b;
+printf("The addition of the no. is =%d",result);
+else if(choice==2)
+result=a*b;
+printf("The multiplication of the two numbers is =%d",result);
+
 return 0;
 
 }
